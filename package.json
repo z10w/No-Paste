@@ -1,0 +1,66 @@
+{
+  "name": "noo-paste",
+  "displayName": "No Paste | Learn by Typing",
+  "description": "Blocks paste in the editor to encourage real learning. Type it out — your brain will thank you.",
+  "version": "1.0.0",
+  "publisher": "z10w",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Education",
+    "Other"
+  ],
+  "keywords": [
+    "learning",
+    "no paste",
+    "typing",
+    "coding practice",
+    "education"
+  ],
+  "icon": "icon.png",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "noPaste.toggle",
+        "title": "No Paste: Toggle On/Off",
+        "category": "No Paste"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "noPaste.blockPaste",
+        "key": "ctrl+v",
+        "mac": "cmd+v",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "noPaste.blockPaste",
+        "key": "ctrl+shift+alt+v",
+        "mac": "cmd+shift+alt+v",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "noPaste.toggle",
+        "key": "ctrl+shift+alt+p",
+        "mac": "cmd+shift+alt+p",
+        "title": "No Paste: Toggle On/Off"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "npx @vscode/vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^2.32.0"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/no-paste"
+  }
+}

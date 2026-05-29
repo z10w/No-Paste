@@ -1,123 +1,113 @@
 <div align="center">
 
-<br>
+# No Paste — Learn by Typing
 
-# No Paste
+### Stop copying. Start understanding.
 
-**A VS Code extension that blocks paste to make you a better developer.**
-
-<br>
-
-[![Version](https://img.shields.io/visual-studio-marketplace/v/DilerOmar.no-paste?color=black&label=version)](https://marketplace.visualstudio.com/items?itemName=DilerOmar.no-paste)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/DilerOmar.no-paste?color=black&label=installs)](https://marketplace.visualstudio.com/items?itemName=DilerOmar.no-paste)
-[![License](https://img.shields.io/badge/license-MIT-black)](./LICENSE)
-[![VS Code](https://img.shields.io/badge/VS%20Code-1.70%2B-black)](https://code.visualstudio.com)
-
-<br>
+**The habit that holds back most beginner coders — and how to break it.**
 
 </div>
 
 ---
 
-## What is this
+## The Problem
 
-No Paste is a small, focused VS Code extension that intercepts the paste shortcut inside the editor. When you press `Ctrl+V`, instead of pasting, it shows you a short message and does nothing else.
+Every beginner does it. You find a tutorial, a Stack Overflow answer, a GitHub repo — and you copy-paste the code straight into your editor.
 
-The idea is simple: most beginners learn by reading code and pasting it. That feels productive but produces very little actual understanding. The moment you are forced to type something yourself, you slow down, you think, and you remember.
+It works. Your app runs. But three days later, you cannot remember a single line of it.
 
-This extension creates that friction on purpose.
+That is not a memory problem. That is a learning problem.
 
----
-
-## How it works
-
-- Intercepts `Ctrl+V` / `Cmd+V` inside the editor
-- Intercepts right-click Paste from the context menu
-- Displays a short motivational message when paste is attempted
-- Adds a status bar indicator showing whether blocking is active
-- Remembers the on/off state between sessions
-
-Nothing is collected. Nothing is sent anywhere. The extension does exactly one thing locally.
+When you paste code, your brain treats it as done. There is no struggle, no friction, no moment of "why does this semicolon go here?" — and without that friction, there is no learning. You got the output without building the understanding.
 
 ---
 
-## Installation
+## The Solution
 
-**From the VS Code Marketplace**
+No Paste is a VS Code extension with one job: block the paste shortcut so you are forced to type every line yourself.
 
-Open VS Code, go to the Extensions panel, search for **No Paste**, and click Install.
+That is it. No complex settings. No accounts. No tracking. Just you, your keyboard, and code that you actually understand because you wrote it.
 
-**From source**
+---
 
-```bash
-git clone https://github.com/DilerOmar/no-paste.git
-cd no-paste
-npm install
-npx @vscode/vsce package
+## Features
+
+| Feature | Description |
+|---|---|
+| Paste Blocker | Intercepts Ctrl+V / Cmd+V and right-click Paste in the editor |
+| Motivational Messages | A short reminder appears each time paste is attempted |
+| Quick Toggle | Enable or disable instantly from the status bar or Command Palette |
+| Status Bar Indicator | Always know at a glance whether No Paste is active |
+| Persistent State | Remembers your setting between VS Code sessions |
+| Zero Configuration | Works the moment you install it |
+
+---
+
+## Toggling On and Off
+
+No Paste is on by default, but there are times you legitimately need to paste — API keys, config files, license headers. Two ways to toggle:
+
+Click the status bar item at the bottom right of the editor window, or open the Command Palette and run:
+
+```
+No Paste: Toggle On/Off
 ```
 
-Then in VS Code: Extensions panel → `...` menu → Install from VSIX → select the generated `.vsix` file.
-
----
-
-## Usage
-
-The extension activates automatically on startup. No configuration required.
-
-**Toggle on/off**
-
-| Method | Action |
+| Platform | Shortcut |
 |---|---|
-| Status bar | Click the `No Paste` item at the bottom right |
-| Command Palette | `No Paste: Toggle On/Off` |
-| Keyboard shortcut | `Ctrl+Shift+Alt+P` / `Cmd+Shift+Alt+P` on Mac |
+| Windows / Linux | Ctrl + Shift + Alt + P |
+| Mac | Cmd + Shift + Alt + P |
+---
 
-The toggle is useful when you genuinely need to paste something — a config value, an API key, a license header. Disable it, paste, re-enable it.
+## Why Typing Code Makes You a Better Developer
+
+Research in cognitive science consistently shows that generative learning — producing information yourself rather than passively receiving it — leads to significantly better retention and understanding.
+
+When you type code manually you build muscle memory for syntax and structure, catch your own mistakes as they happen, understand why each line exists rather than just that it works, and retain what you learned far longer than anything you ever copy-pasted.
+
+The developers who advance fastest are not the ones who find code quickest. They are the ones who understand it deepest.
 
 ---
 
-## Why this exists
+## Who Is This For
 
-There is a pattern that repeats itself with nearly every beginner coder. They follow a tutorial, copy the code, run it, and move on. The output works so it feels like learning happened. But ask them to reproduce the same code two days later without looking and most cannot.
+- Beginners learning their first programming language
+- Intermediate developers working through tutorials or courses
+- Bootcamp students building portfolio projects
+- Anyone who wants to break the copy-paste habit for good
 
-Copy-pasting bypasses the part of learning that actually builds skill. Typing forces your brain to process each character, each keyword, each bracket. Mistakes appear. You fix them. That process — struggle, correction, understanding — is what builds a developer.
+---
 
-No Paste exists to make that process the default.
+## Requirements
+
+VS Code v1.70.0 or higher. No additional dependencies.
+
+---
+
+## Release Notes
+
+### 1.0.0
+
+Initial release. Paste blocking via keyboard shortcut and context menu override, toggle command and status bar indicator, motivational message system, and persistent on/off state across sessions.
 
 ---
 
 ## Contributing
 
-Issues and pull requests are welcome.
-
-If you find a shortcut conflict, a case where paste slips through, or have an idea for a feature, open an issue and describe it clearly.
-
-```bash
-git clone https://github.com/DilerOmar/no-paste.git
-cd no-paste
-code .
-# Press F5 to open a VS Code Extension Development Host for testing
-```
-
----
-
-## Roadmap
-
-- Session stats showing how many paste attempts were blocked
-- Whitelist specific file types where paste is always allowed
-- Configurable motivational messages
-- JetBrains plugin port
+Found a bug or have an idea? Pull requests and issues are welcome on GitHub.
 
 ---
 
 ## License
 
-MIT. See [LICENSE](./LICENSE) for details.
+MIT — free to use, share, and modify.
 
 ---
 
 <div align="center">
 
-Built by [Diler Omar](https://github.com/DilerOmar)
+*Made for learners, by someone who wished this existed when they started.*
+
+If this extension helped you learn, leave a rating.
 
 </div>
