@@ -8,8 +8,8 @@
 
 <br>
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/DilerOmar.no-paste?color=black&label=version)](https://marketplace.visualstudio.com/items?itemName=DilerOmar.no-paste)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/DilerOmar.no-paste?color=black&label=installs)](https://marketplace.visualstudio.com/items?itemName=DilerOmar.no-paste)
+[![Version](https://img.shields.io/visual-studio-marketplace/v/z10w.No-Paste?color=black&label=version)](https://marketplace.visualstudio.com/items?itemName=z10w.No-Paste)
+[![Installs](https://img.shields.io/visual-studio-marketplace/i/z10w.No-Paste?color=black&label=installs)](https://marketplace.visualstudio.com/items?itemName=z10w.No-Paste)
 [![License](https://img.shields.io/badge/license-MIT-black)](./LICENSE)
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.70%2B-black)](https://code.visualstudio.com)
 
@@ -51,7 +51,7 @@ Open VS Code, go to the Extensions panel, search for **No Paste**, and click Ins
 
 ```bash
 git clone https://github.com/z10w/No-Paste.git
-cd no-paste
+cd No-Paste
 npm install
 npx @vscode/vsce package
 ```
@@ -93,8 +93,8 @@ Issues and pull requests are welcome.
 If you find a shortcut conflict, a case where paste slips through, or have an idea for a feature, open an issue and describe it clearly.
 
 ```bash
-git clone https://github.com/DilerOmar/no-paste.git
-cd no-paste
+git clone https://github.com/z10w/No-Paste.git
+cd No-Paste
 code .
 # Press F5 to open a VS Code Extension Development Host for testing
 ```
@@ -118,6 +118,6 @@ MIT. See [LICENSE](./LICENSE) for details.
 
 <div align="center">
 
-Built by [Diler Omar](https://github.com/DilerOmar)
+Built by [z10w](https://github.com/z10w)
 
 </div>
