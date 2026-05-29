@@ -50,7 +50,7 @@ Open VS Code, go to the Extensions panel, search for **No Paste**, and click Ins
 **From source**
 
 ```bash
-git clone https://github.com/DilerOmar/no-paste.git
+git clone https://github.com/z10w/No-Paste.git
 cd no-paste
 npm install
 npx @vscode/vsce package
